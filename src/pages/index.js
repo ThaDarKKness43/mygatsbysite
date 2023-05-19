@@ -1,9 +1,8 @@
 import * as React from "react"
 import { Link } from 'gatsby'
-import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
-
+import Layout from '../components/layout'
 
 const pageStyles = {
   color: "#232129",
@@ -130,11 +129,11 @@ const links = [
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home Page">
-      <p>I'm making this by following the Gatsby Tutorial.</p>
+    <Layout pageTitle="Home">
+      <p>Hello! My name is Daniel Azevedo, and I'm a web developer</p>
       <StaticImage
         alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
-        src="../images/Pit-1.jpg"
+        src="../images/imagem.jpg"
       />
     </Layout>
   )

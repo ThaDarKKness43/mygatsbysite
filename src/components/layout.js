@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import Navbar from './Navbar'
 import {
     container,
     heading,
@@ -8,6 +9,7 @@ import {
     navLinkText,
     siteTitle,
   } from './layout.module.css'
+import { layout } from '@chakra-ui/react'
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
@@ -22,9 +24,9 @@ const Layout = ({ pageTitle, children }) => {
 
   return (
     <div className={container}>
-      <header className={siteTitle}>{data.site.siteMetadata.title}</header>
-      <nav>
-        <ul className={navLinks}>
+      { <header className={siteTitle}>{data.site.siteMetadata.title}</header> }
+      { /*<Navbar />*/ }
+        { <ul className={navLinks}>
           <li className={navLinkItem}>
             <Link to="/" className={navLinkText}>
                 Home
@@ -32,16 +34,21 @@ const Layout = ({ pageTitle, children }) => {
           </li>
           <li className={navLinkItem}>
             <Link to="/about" className={navLinkText}>
-                About
+                About Me
             </Link>
           </li>
           <li className={navLinkItem}>
             <Link to="/blog" className={navLinkText}>
-              Blog
+              Projects
             </Link>
           </li>
-        </ul>
-      </nav>
+          <li className={navLinkItem}>
+            <Link to="/contacts" className={navLinkText}>
+              Contacts
+            </Link>
+          </li>
+        </ul> }
+      {/* { <Navbar /> } */}
       <main>
         <h1 className={heading}>{pageTitle}</h1>
         {children}
