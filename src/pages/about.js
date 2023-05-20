@@ -4,10 +4,18 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import html from '../images/HTML5.png'
+import css from '../images/CSS3.png'
+import javascript from '../images/JavaScript.png'
+import react from '../images/React.png'
 import {
   skills,
-  skill
+  skills2,
+  skill,
+  skill2,
+  skill3,
+  skill4,
 } from '../components/layout.module.css'
+import { Margin } from '@mui/icons-material'
 
 // Step 2: Define your component
 const AboutPage = () => {
@@ -35,11 +43,43 @@ const AboutPage = () => {
                 <img src={html} alt="Logo" />
                 <p>HTML</p>
             </div>
-            <div className={skill}>
-                <img src={html} alt="Logo" />
-                <p>HTML</p>
+            <div className={skill2}>
+                <img src={css} alt="Logo" />
+                <p>CSS</p>
+            </div>
+            <div className={skill3}>
+                <img src={javascript} alt="Logo" />
+                <p>JavaScript</p>
+            </div>
+            <div className={skill4}>
+                <img src={react} alt="Logo" />
+                <p>React</p>
             </div>
          </div>
+
+         {/* <br />
+
+         <div className={skills2}>
+            <div className={skill3}>
+                <img src={javascript} alt="Logo" />
+                <p>JavaScript</p>
+            </div>
+            <div className={skill4}>
+                <img src={react} alt="Logo" />
+                <p>React</p>
+            </div>
+         </div> */}
+
+         {/* <div className={skills2}>
+            <div className={skill}>
+                <img src={html} alt="Logo" />
+                <p className={skilljavascript}>JavaScript</p>
+            </div>
+            <div className={skill2}>
+                <img src={html} alt="Logo" />
+                <p>React</p>
+            </div>
+         </div> */}
     </Layout>
   )
 }
