@@ -14,7 +14,7 @@ import {
   text2,
   text3,
   btnGithub,
-  icon
+  icon,
 } from '../components/layout.module.css'
 
 const IndexPage = () => {

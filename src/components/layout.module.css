@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 body {
     background-image: url("../images/wallpaper.jpg");
@@ -16,36 +17,38 @@ main {
     /* max-width: 500px; */
     font-family: sans-serif;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    width: 1520px;
-    margin-top: -8px;
-    margin-right: 300px;
+    margin-top: 3%;
 }
 
 .heading {
     color: rebeccapurple;
 }
 
-.nav {
-    height: 60px;
-    width: 101.1%;
-    margin-left: -0.6%;
-}
+.logo {
+    position: absolute;
+    right: 90%;
+    text-decoration: none;
+    color: white;
+    top: 19.5%;
+    font-size: 22px;
+    font-family: "Kaushan Script", cursive;
+  }
 
-.nav-links {
+.navLinks {
     display: flex;
     list-style: none;
     padding-left: 0;
-    width: 361px;
-    margin-left: 76%;
+    margin-left: 74%;
 }
 
-.nav-link-item {
+.navLinkItem {
     padding-right: 2rem;
     margin-top: 1px;
 }
 
-.nav-link-text {
+.navLinkText {
     color: white;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -55,7 +58,7 @@ main {
     line-height: 25px;
 }
 
-    .nav-link-text:hover {
+    .navLinkText:hover {
         text-decoration: underline;
     }
 
@@ -77,27 +80,27 @@ main {
         margin-left: 10%;
     }
 
-    .home .text {
-        margin-top: 62px;
-        margin-left: 15%;
-        font-family: 'Ubuntu', sans-serif;
-        height: 10%;
-        width: 100%;
-    }
-
-        .home .text .text1 {
-            font-size: 75px;
-            font-weight: 600;
+        .home .homeContainer .text {
+            margin-top: 62px;
+            margin-left: 15%;
+            font-family: 'Ubuntu', sans-serif;
+            height: 10%;
+            width: 100%;
         }
 
-        .home .text .text2 {
-            font-size: 75px;
-            font-weight: 600;
-        }
+            .home .homeContainer .text .text1 {
+                font-size: 75px;
+                font-weight: 600;
+            }
 
-        .home .text .text3 {
-            font-size: 25px;
-        }
+            .home .homeContainer .text .text2 {
+                font-size: 75px;
+                font-weight: 600;
+            }
+
+            .home .homeContainer .text .text3 {
+                font-size: 25px;
+            }
 
     .home .btnGithub {
         margin-top: 200px;
@@ -126,71 +129,109 @@ main {
             height: 13px;
         }
 
-.skills2 {
-    margin-top: 90px;
+.about {
+    display: flex;
+    width: 1100px;
+    margin-top: 48px;
+    height: 500px;
 }
+
+.about .profileImage {
+    position: absolute;
+    width: 94%;
+}
+
+    .about .aboutContainer {
+        position: relative; 
+        margin-left: 10%;
+    }
+
+        .about .aboutContainer .text {
+            margin-top: 11px;
+            margin-left: 35%;
+            font-family: 'Ubuntu', sans-serif;
+            height: 10%;
+            width: 65%;
+        }
+
+            .about .aboutContainer .text .text1 {
+                font-size: 45px;
+                font-weight: 600;
+            }
+
+            .about .aboutContainer .text .text2 {
+                font-size: 20px;
+                margin-top: 3%;     
+            }
+
+            .about .aboutContainer .text .text3 {
+                font-size: 28px;
+                font-weight: 300;
+                margin-top: 8%;     
+            }
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills2 {
+    margin-top: 130px;
+}
+
+/*.skills3 {
+    margin-top: 200px;
+}*/
 
 .skill {
     box-sizing: border-box;
 
     position: absolute;
-    width: 209px;
-    height: 76px;
+    width: 90px;
+    height: 85px;
 
     background: #FFFFFF;
     border: 4px solid #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
     .skill img {
         position: absolute;
-        width: 85px;
+        width: 78px;
         height: 68px;
-        left: 10px;
+        left: 2.2px;
+        margin-top: 5px;
         background: url("../images/HTML5.png");
-    }
-
-    .skill p {
-        position: absolute;
-        width: 105px;
-        height: 76px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 24px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        left: 120px;
-        bottom: -26px;
-        color: #000000;
     }
 
 .skill2 {
     box-sizing: border-box;
 
     position: absolute;
-    width: 209px;
-    height: 76px;
+    width: 90px;
+    height: 85px;
 
     background: #FFFFFF;
     border: 4px solid #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 250px;
+    border-radius: 9px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    margin-left: 110px;
 }
     
         .skill2 img {
             position: absolute;
-            width: 60px;
+            width: 55px;
             height: 68px;
-            left: 20px;
+            left: 14px;
+            margin-top: 5px;
             background: url("../images/CSS3.png");
         }
     
-        .skill2 p {
+        /*.skill2 p {
             position: absolute;
             width: 105px;
             height: 76px;
+            font-family: 'Ubuntu', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 20px;
@@ -201,33 +242,116 @@ main {
             left: 120px;
             bottom: -26px;
             color: #000000;
-        }
+        } */
 
 .skill3 {
     box-sizing: border-box;
 
     position: absolute;
-    width: 209px;
-    height: 76px;
+    width: 90px;
+    height: 85px;
 
     background: #FFFFFF;
     border: 4px solid #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 500px;
+    border-radius: 9px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    margin-left: 220px;
 }
     
         .skill3 img {
             position: absolute;
-            width: 140px;
-            height: 68px;
-            left: -20px;
+            margin-top: 9px;
+            width: 63px;
+            height: 60px;
+            left: 9px;
+            margin-top: 7px;
             background: url("../images/JavaScript.png");
         }
     
-        .skill3 p {
+        /* .skill3 p {
             position: absolute;
             width: 105px;
             height: 76px;
+            font-family: 'Ubuntu', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            left: 98px;
+            bottom: -26px;
+            color: #000000;
+        } */
+
+.skill4 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 90px;
+    height: 85px;
+
+    background: #FFFFFF;
+    border: 4px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-left: 330px;
+}
+    
+        .skill4 img {
+            position: absolute;
+            width: 74px;
+            height: 60px;
+            top: 9px;
+            left: 4.9px;
+            background: url("../images/React.png");
+        }
+    
+        .skill4 p {
+            position: absolute;
+            width: 105px;
+            height: 76px;
+            font-family: 'Ubuntu', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            left: 119px;
+            bottom: -26px;
+            color: #000000;
+        }
+
+.skill5 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 90px;
+    height: 85px;   
+
+    background: #FFFFFF;
+    border: 4px solid #FFFFFF;
+    border-radius: 9px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+    
+        .skill5 img {
+            position: absolute;
+            margin-top: 2.5px;
+            width: 47px;
+            height: 69px;
+            left: 17px;
+            background: url("../images/Java.png");
+        }
+    
+        .skill5 p {
+            position: absolute;
+            width: 105px;
+            height: 76px;
+            font-family: 'Ubuntu', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 20px;
@@ -240,41 +364,123 @@ main {
             color: #000000;
         }
 
-    .skill4 {
-        box-sizing: border-box;
+.skill6 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 90px;
+    height: 85px;
+
+    background: #FFFFFF;
+    border: 4px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-left: 110px;
+}
     
-        position: absolute;
-        width: 209px;
-        height: 76px;
+        .skill6 img {
+            position: absolute;
+            width: 110px;
+            height: 100px;
+            top: -11px;
+            left: -14px;
+            background: url("../images/Csharp.png");
+        }
     
-        background: #FFFFFF;
-        border: 4px solid #FFFFFF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        margin-left: 750px;
-    }
-        
-            .skill4 img {
-                position: absolute;
-                width: 77px;
-                height: 60px;
-                top: 4px;
-                left: 12px;
-                background: url("../images/React.png");
-            }
-        
-            .skill4 p {
-                position: absolute;
-                width: 105px;
-                height: 76px;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 24px;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                left: 119px;
-                bottom: -26px;
-                color: #000000;
-            }
+        .skill6 p {
+            position: absolute;
+            width: 105px;
+            height: 76px;
+            font-family: 'Ubuntu', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            left: 119px;
+            bottom: -26px;
+            color: #000000;
+        }
+
+.skill7 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 90px;
+    height: 85px;
+
+    background: #FFFFFF;
+    border: 4px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-left: 220px;
+}
+    
+        .skill7 img {
+            position: absolute;
+            width: 115px;
+            height: 60px;
+            top: 7px;
+            left: -16px;
+            background: url("../images/SQL.png");
+        }
+    
+        .skill7 p {
+            position: absolute;
+            width: 105px;
+            height: 76px;
+            font-family: 'Ubuntu', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            left: 119px;
+            bottom: -26px;
+            color: #000000;
+        }
+
+.skill8 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 90px;
+    height: 85px;
+
+    background: #FFFFFF;
+    border: 4px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-left: 330px;
+}
+    
+        .skill8 img {
+            position: absolute;
+            width: 119px;
+            height: 60px;
+            top: 8px;
+            left: -18px;
+            background: url("../images/Python.png");
+        }
+    
+        .skill8 p {
+            position: absolute;
+            width: 105px;
+            height: 76px;
+            font-family: 'Ubuntu', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            left: 119px;
+            bottom: -26px;
+            color: #000000;
+        }
 
