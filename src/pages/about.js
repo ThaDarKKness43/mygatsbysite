@@ -21,37 +21,7 @@ import {
 // Step 2: Define your component
 const AboutPage = () => {
   return (
-    <Layout /*pageTitle="About Me"*/>
-      {/* <p>I'm 25 years and I've always been interested in computers since 
-         I was young and I have always wanted to learn more and work in 
-         this area. In high school I took a professional course in a 
-         Management Informatics. Then I went to college where I did a 
-         professional course in Networks and Computer Systems. Initially, 
-         that specific area was what I wanted to pursue the most, but 
-         after having completed my internship, I decided to move on and 
-         get a degree in Computer Science.</p>
-         <br />
-         <p>Languages I can work with: </p>
-
-         <div className={skills}>
-            <div className={skill}>
-                <img src={html} alt="Logo" />
-                <p>HTML</p>
-            </div>
-            <div className={skill2}>
-                <img src={css} alt="Logo" />
-                <p>CSS</p>
-            </div>
-            <div className={skill3}>
-                <img src={javascript} alt="Logo" />
-                <p>JavaScript</p>
-            </div>
-            <div className={skill4}>
-                <img src={react} alt="Logo" />
-                <p>React</p>
-            </div>
-         </div> */}
-
+    <Layout>
       <div className={about}>
         <StaticImage
           className={profileImage}
@@ -87,7 +57,7 @@ const AboutPage = () => {
                     <div className={skill4}>
                         <img src={react} alt="Logo" />
                     </div>
-                </div>
+                </div>  
                 <div className={skills2}>
                     <div className={skill5}>
                         <img src={java} alt="Logo" />
