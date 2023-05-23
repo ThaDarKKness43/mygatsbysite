@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import AppBar from '@mui/material/AppBar';
+import { BrowserRouter } from 'react-router-dom'
+import Navbar from './Navbar'
 import {
     container,
     heading,
@@ -8,9 +10,11 @@ import {
     navLinks,
     navLinkItem,
     navLinkText,
-    logo
+    logo,
+    homeItem,
+    underline
   } from './layout.module.css'
-import { Typography } from '@mui/material';
+import { Toolbar, Typography } from '@mui/material';
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
@@ -26,34 +30,39 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <div className={container}>
       <AppBar className={nav}>
-        {
-          <ul className={navLinks}>
-            <li className={navLinkItem}>
-              <Link to="/" className={logo}>
-                  Daniel Azevedo
-              </Link>
-            </li>
-            <li className={navLinkItem}>
-              <Link to="/" className={navLinkText}>
-                  Home
-              </Link>
-            </li>
-            <li className={navLinkItem}>
-              <Link to="/about" className={navLinkText}>
-                  About
-              </Link>
-            </li>
-            <li className={navLinkItem}>
-              <Link to="/projects" className={navLinkText}>
-                Projects
-              </Link>
-            </li>
-            <li className={navLinkItem}>
-              <Link to="/contacts" className={navLinkText}>
-                Contacts
-              </Link>
-            </li>
-        </ul> }
+          <Toolbar>
+            <ul className={navLinks}>
+              <li className={navLinkItem}>
+                <Link to="/" className={logo}>
+                    Daniel Azevedo
+                </Link>
+              </li>
+              <li id={homeItem} className={navLinkItem}>
+                <Link to="/" className={navLinkText}>
+                    Home
+                </Link>
+                <div className={underline}></div>
+              </li>
+              <li className={navLinkItem}>
+                <Link to="/about" className={navLinkText}>
+                    About
+                </Link>
+                <div className={underline}></div>
+              </li>
+              <li className={navLinkItem}>
+                <Link to="/projects" className={navLinkText}>
+                  Projects
+                </Link>
+                <div className={underline}></div>
+              </li>
+              <li className={navLinkItem}>
+                <Link to="/contact" className={navLinkText}>
+                  Contact
+                </Link>
+                <div className={underline}></div>
+              </li>
+          </ul>
+          </Toolbar>
         </AppBar>
       
       <br />
